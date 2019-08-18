@@ -7,11 +7,6 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.text.format.DateUtils;
 import android.text.format.Time;
 import android.view.ContextThemeWrapper;
@@ -26,6 +21,12 @@ import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.ViewPager;
 
 import com.antonyt.infiniteviewpager.InfinitePagerAdapter;
 import com.antonyt.infiniteviewpager.InfiniteViewPager;
@@ -1446,7 +1447,7 @@ public class CaldroidFragment extends DialogFragment {
      *
      * @author thomasdao
      */
-    public class DatePageChangeListener implements OnPageChangeListener {
+    public class DatePageChangeListener implements ViewPager.OnPageChangeListener {
         private int currentPage = InfiniteViewPager.OFFSET;
         private DateTime currentDateTime;
         private ArrayList<CaldroidGridAdapter> caldroidGridAdapters;
@@ -1605,6 +1606,7 @@ public class CaldroidFragment extends DialogFragment {
 
     }
 
+    /*
     @Override
     public void onDetach() {
         super.onDetach();
@@ -1620,5 +1622,5 @@ public class CaldroidFragment extends DialogFragment {
         } catch (IllegalAccessException e) {
             throw new RuntimeException(e);
         }
-    }
+    }*/
 }
