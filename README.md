@@ -1,3 +1,16 @@
+Note from @TienTham
+===================
+
+I have forked this project so that I can update the project by myself and for my need. If you need to create an aar lib ready to be used inside your application. Following steps:
+
+https://gist.github.com/tientham/54bb46beb8ee3fe8e8d554e16501743a
+
+The above link will instruct you how to generate a jar or aar java lib.
+
+Using this library, you can insert into your project as a module.
+
+**The project has been aligned with AndroidX**
+
 Caldroid
 ========
 
@@ -31,19 +44,6 @@ Setup
 **For Eclipse/ADT user**: please see tag [eclipse_project](https://github.com/roomorama/Caldroid/releases/tag/eclipse_project), download the source codes, check out the CaldroidSample to see how the library works. However you are strongly recommended to use Maven or gradle, because this tag is no longer supported.
 
 To use in your project, reference the child library project as a library. If you see JAR mismatched error, replace your android-support-v4.jar to the jar inside Caldroid. Make sure you compile the project against Android 4.2 and above to allow nested fragment. See more at http://developer.android.com/about/versions/android-4.2.html#NestedFragments
-
-Note from @TienTham
-===================
-
-**I have forked this project so that I can update the project by myself and for my need. If you need to create an aar lib ready to be used inside your application. Following steps:
-
-https://gist.github.com/tientham/54bb46beb8ee3fe8e8d554e16501743a
-
-The above link will instruct you how to generate a jar or aar java lib.
-
-Using this library, you can insert into your project as a module.
-
-**The project has been aligned with AndroidX
 
 Features
 ========
